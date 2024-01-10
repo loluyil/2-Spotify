@@ -1,0 +1,73 @@
+<!-- Sidebar -->
+<div class="spotify__home-container_side-bar col-2">
+    <div class="spotify__home-container_side-bar1">
+        <!-- Spotify Logo -->
+        <div class="spotify__home-container_side-bar-items">
+            <img src="assets/Spotify_Logo_RGB_White.png" alt="spotify-logo"
+                class="spotify__home-container_side-bar_logo" />
+        </div>
+        <!-- Side Bar -->
+        <div class="spotify__home-container_side-bar-items">
+            <!-- Home + Icon -->
+            <div class="spotify__home-container_side-bar-items-container" (click)="toggleColor('home')"
+                [class.clicked]="activeContainer === 'home'">
+                <!-- Figure out how to fix hover and make only one p turn color -->
+                <fa-icon class="spotify__home-container_side-bar-items-container-icon fa-house" [icon]="faHouse"
+                    [class.clicked]="activeContainer === 'home'"></fa-icon>
+                <p [class.clicked]="activeContainer === 'home'">Home</p>
+            </div>
+        </div>
+        <div class="spotify__home-container_side-bar-items">
+            <!-- Search + Icon -->
+            <div class="spotify__home-container_side-bar-items-container" (click)="toggleColor('search')">
+                <fa-icon class="spotify__home-container_side-bar-items-container-icon fa-magnifying-glass"
+                    [icon]="faMagnifyingGlass" [class.clicked]="activeContainer === 'search'"></fa-icon>
+                <p [class.clicked]="activeContainer === 'search'">Search</p>
+                <!-- Circle within the magnifying glass whenever clicked  /  *ngIf to only show when clicked, is initially hidden-->
+                <fa-icon class="circle-icon" [icon]="faCircle" *ngIf="activeContainer === 'search'"></fa-icon>
+            </div>
+        </div>
+    </div>
+    <div class="spotify__home-container_side-bar2">
+        <div class="spotify__home-container_side-bar-items">
+            <!-- Library -->
+            <div class="spotify__home-container_side-bar-items_library-container">
+                <div class="spotify__home-container_side-bar-items_library-container-header">
+                    <fa-icon class="spotify__home-container_side-bar-items-container-icon fa-layer-group fa-rotate-90"
+                        [icon]="faLayerGroup" [style.transform]="iconTransform"></fa-icon>
+                    <p>Your Library</p>
+                </div>
+                <button><fa-icon class="fa-plus" [icon]="faPlus"></fa-icon></button>
+            </div>
+            <div class="spotify__home-container_side-bar_library-create-container">
+                <div class="spotify__home-container_side-bar_library-create-container-items">
+                    <p class="library-header">Create your first playlist</p>
+                    <p class="library-text">It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+            </div>
+            <!-- Podcast -->
+            <div class="spotify__home-container_side-bar_library-create-container">
+                <div class="spotify__home-container_side-bar_library-create-container-items">
+                    <p class="library-header">Let's find some podcasts to follow</p>
+                    <p class="library-text">We'll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+            <div class="spotify__home-container_side-bar_library-extras-container">
+                <div class="spotify__home-container_side-bar_library-extras-container-items">
+                    <p>Legal</p>
+                    <p>Privacy Center</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies</p>
+                    <p>About Ads</p>
+                    <p>Accessibility</p>
+                    <p class="spotify__home-cookies">Cookies</p>
+                </div>
+                <!-- Button is visually glitching, need to fix -->
+                <button><fa-icon [icon]="faGlobe" class="fa-globe"></fa-icon> English</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
