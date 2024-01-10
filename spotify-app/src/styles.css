@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(https://db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=CircularSpotifyTxT-Black);
+@font-face {
+    font-family: 'CircularSpotifyText-Black';
+    src: url('./fonts/CircularSpotifyText-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CircularSpotifyText-Book';
+    src: url('./fonts/CircularSpotifyText-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CircularSpotifyText-Light';
+    src: url('./fonts/CircularSpotifyText-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CircularSpotifyText-Medium';
+    src: url('./fonts/CircularSpotifyText-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    overflow: hidden;
+}
