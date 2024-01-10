@@ -11,14 +11,16 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { NavCardComponent } from "../../components/nav-card/nav-card.component";
 
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [FontAwesomeModule, CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    standalone: true,
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    imports: [FontAwesomeModule, CommonModule, NavCardComponent]
 })
 export class HomeComponent {
   activeContainer: string = ''; // Track the active container
@@ -45,4 +47,5 @@ export class HomeComponent {
   faCircle = faCircle;
   faLayerGroup = faLayerGroup;
   faPlus = faPlus;
+  faGlobe = faGlobe;
 }

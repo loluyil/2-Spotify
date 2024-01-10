@@ -63,10 +63,26 @@
                         <button>Browse podcasts</button>
                     </div>
                 </div>
-                <div class="spotify__home-container_side-bar_library-extras-container"> <!-- Small print--> </div>
+                <div class="spotify__home-container_side-bar_library-extras-container">
+                    <div class="spotify__home-container_side-bar_library-extras-container-items">
+                        <p>Legal</p> 
+                        <p>Privacy Center</p> 
+                        <p>Privacy Policy</p> 
+                        <p>Cookies</p> 
+                        <p>About Ads</p>
+                        <p>Accessibility</p> 
+                        <p class="spotify__home-cookies">Cookies</p>
+                    </div>
+                    <!-- Button is visually glitching, need to fix -->
+                    <button><fa-icon [icon]="faGlobe" class="fa-globe"></fa-icon> English</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="spotify__home-container_playlist-container col-10"></div>
+    <div class="spotify__home-container_playlist col-10">
+        <div class="spotify__home-container_playlist-container">
+            <app-nav-card></app-nav-card>
+        </div>
+    </div>
 </div>
 

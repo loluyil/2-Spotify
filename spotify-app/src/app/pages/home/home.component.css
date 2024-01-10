@@ -22,20 +22,10 @@
 
 /* font settings, font was imported in style.css */
 
-    color: #B3B3B3;
+    color: #A7A7A7;
     font-size: 15px;
     font-family: "CircularSpotifyText-Medium";
     margin: 0px;
-}
-
-/*
-    col 10 makes it take up 10/12 of the screen, so no need for width
-    if overflow: hidden wasn't used in style.css, the playlist-container would be scrollable and under the side-bar
-*/
-
-.spotify__home-container_playlist-container {
-    background-color: #121212;
-    height: 100vh;
 }
 
 /*
@@ -53,15 +43,6 @@
     flex-shrink: 0;
 } 
 
-.spotify__home-container_side-bar2 {
-    margin-top: -2px;
-    background-color: #121212;
-    width: 94%;
-    height: 752px;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
-
 .spotify__home-container_side-bar_logo {
     width: 80px;
     margin: 1rem;
@@ -76,7 +57,7 @@
 
 .spotify__home-container_side-bar-items-container-icon {
     font-size: 22px;
-    color: #B3B3B3;
+    color: #A7A7A7;
 }
 
 /*
@@ -147,6 +128,15 @@
 
 /* the library container */
 
+.spotify__home-container_side-bar2 {
+    margin-top: -2px;
+    background-color: #121212;
+    width: 94%;
+    height: 752px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
 .spotify__home-container_side-bar-items_library-container {
     margin-left: 0px;
     margin-top: 22px;
@@ -174,7 +164,7 @@
 /* find a way to center it with the button */
 
 .fa-plus {
-    color: #B3B3B3;
+    color: #A7A7A7;
     font-size: 18px;
 }
 
@@ -193,7 +183,6 @@
     padding: 14px 22px;
     border-radius: 10px;
     overflow: hidden;
-        /* Hide the overflow if needed */
 }
 
 .spotify__home-container_side-bar_library-create-container-items p {
@@ -218,6 +207,67 @@
 .library-header {
     margin-top: 6px;
 }
+
+.spotify__home-container_side-bar_library-extras-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-top: 90px;
+}
+
+.spotify__home-container_side-bar_library-extras-container-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.spotify__home-container_side-bar_library-extras-container-items p {
+    color: #979797;
+    font-size: 11px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.spotify__home-container_side-bar_library-extras-container-items p.spotify__home-cookies {
+    font-size: 13px;
+}
+
+.spotify__home-container_side-bar_library-extras-container button {
+    font-size: 14px;
+    font-family: "CircularSpotifyText-Black";
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: #121212;
+    padding: 5px 15px;
+    margin-top: 37px;
+    margin-left: 14px;
+    outline: none;
+    border: 1px solid #727272;
+}
+
+/* Playlist container */
+
+/*
+    col 10 makes it take up 10/12 of the screen, so no need for width
+    if overflow: hidden wasn't used in style.css, the playlist-container would be scrollable and under the side-bar
+*/
+
+.spotify__home-container_playlist {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.spotify__home-container_playlist-container {
+    background-color: #121212;
+    width: calc(100% - 7px); /* testing out calc */
+    height: calc(100% - 18px);
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+/* Hovers and such */
 
 /* 
     inconsistent with class name and hover; icon has a class name=s potify__home-container_side-bar-items-container-icon from above
@@ -257,4 +307,17 @@
 
 .spotify__home-container_side-bar-items_library-container button:not(:hover) .fa-plus:not(:hover) {
     transition: ease-in-out 0.2s;
+}
+
+.spotify__home-container_side-bar_library-extras-container-items p {
+    cursor: pointer;
+}
+
+.spotify__home-container_side-bar_library-extras-container-items p.spotify__home-cookies:hover {
+    text-decoration: underline;
+}
+
+.spotify__home-container_side-bar_library-extras-container button:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
 }
