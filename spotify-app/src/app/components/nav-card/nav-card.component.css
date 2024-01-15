@@ -1,5 +1,57 @@
 .spotify__nav-card {
     width: 100%;
-    height: 67px;
-    background-color: #0c0c0c;
+    height: 56px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.spotify__nav-card_history {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #8D8D8D;
+}
+
+.spotify__nav-card_history_container1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.spotify__nav-card_history_container1 button {
+    all: unset;
+    background-color: #050505;
+    margin-right: 9px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8px;
+    cursor: not-allowed;
+}
+
+.spotify__nav-card_entry {
+    justify-content: flex-end;
+    margin-left: auto;
+    display: flex;
+    font-size: 16px;
+    font-family: "CircularSpotifyText-Black";
+}
+
+.spotify__nav-card_entry-sign-up {
+    color: #A7A7A7;
+    margin-right: 33px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.spotify__nav-card_entry-login {
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-right: 25px;
+    padding: 12px 32px;
+    cursor: pointer;
 }

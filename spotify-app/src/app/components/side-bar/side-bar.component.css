@@ -68,7 +68,7 @@
     margin-left: 1px;
 }
 
-
+/* micro-adjustments */
 
 .spotify__home-container_side-bar-items-container {
     margin-left: 15px;
@@ -141,12 +141,14 @@
 }
 
 .spotify__home-container_side-bar-items_library-container button {
+    all: unset;
     background-color: #121212;
-    border-radius: 30px;
+    border-radius: 50%;
     margin-left: calc(100% - 190px);
-    margin-bottom: 20px;
     position: relative;
-    border: none;
+    top: -6px;
+    right: 6px;
+    padding: 0px 6px;
 }
 
 /* find a way to center it with the button */
@@ -222,6 +224,7 @@
 }
 
 .spotify__home-container_side-bar_library-extras-container button {
+    all: unset;
     font-size: 14px;
     font-family: "CircularSpotifyText-Black";
     color: #ffffff;
@@ -230,7 +233,6 @@
     padding: 5px 15px;
     margin-top: 37px;
     margin-left: 14px;
-    outline: none;
     border: 1px solid #727272;
 }
 
