@@ -20,11 +20,13 @@
         <div class="spotify__home-container_side-bar-items">
             <!-- Search + Icon -->
             <div class="spotify__home-container_side-bar-items-container" (click)="toggleColor('search')">
-                <fa-icon class="spotify__home-container_side-bar-items-container-icon fa-magnifying-glass"
-                    [icon]="faMagnifyingGlass" [class.clicked]="activeContainer === 'search'"></fa-icon>
-                <p [class.clicked]="activeContainer === 'search'">Search</p>
-                <!-- Circle within the magnifying glass whenever clicked  /  *ngIf to only show when clicked, is initially hidden-->
-                <fa-icon class="circle-icon" [icon]="faCircle" *ngIf="activeContainer === 'search'"></fa-icon>
+                <div class="spotify__home-container_side-bar-items-container2">
+                    <fa-icon class="spotify__home-container_side-bar-items-container-icon fa-magnifying-glass"
+                        [icon]="faMagnifyingGlass" [class.clicked]="activeContainer === 'search'"></fa-icon>
+                    <p [class.clicked]="activeContainer === 'search'">Search</p>
+                    <!-- Circle within the magnifying glass whenever clicked  /  *ngIf to only show when clicked, is initially hidden-->
+                    <fa-icon class="circle-icon" [icon]="faCircle" *ngIf="activeContainer === 'search'"></fa-icon>
+                </div>
             </div>
         </div>
     </div>

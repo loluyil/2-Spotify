@@ -1,17 +1,12 @@
 /*  display is flex so side-bar and container are side by side */
 
-/* Playlist container */
-
-
 /* col 10 makes it take up 10/12 of the screen, so no need for width */
 .spotify__home-container {
     display: flex;
 }
 
 
-
 /* Playlist container */
-
 /*
     col 10 makes it take up 10/12 of the screen, so no need for width
     if overflow: hidden wasn't used in style.css, the playlist-container would be scrollable and under the side-bar

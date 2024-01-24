@@ -1,23 +1,24 @@
+/* nav card - the black bar with arrow and signup/login */
+
 .spotify__nav-card {
     width: 100%;
-    height: 56px;
+    height: 57px;
     background-color: #101010;
+    justify-content: flex-end;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .spotify__nav-card_history {
-    display: flex;
-    justify-content: flex-start;
     margin-left: 20px;
     font-size: 18px;
     color: #8D8D8D;
 }
 
+/* bad name - this is the conatiner for the arrows, adjusts the margin of their container */
+
 .spotify__nav-card_history_container1 {
-    display: flex;
-    flex-direction: row;
     margin-left: 10px;
 }
 
@@ -26,32 +27,49 @@
     background-color: #050505;
     margin-right: 9px;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
     padding: 0px 8px;
     cursor: not-allowed;
 }
 
 .spotify__nav-card_entry {
-    justify-content: flex-end;
     margin-left: auto;
     display: flex;
-    font-size: 16px;
-    font-family: "CircularSpotifyText-Black";
+    font-size: 14px;
+    align-items: center;
+    font-family: "CircularSpotifyText-Medium";
+    overflow: visible;
 }
 
 .spotify__nav-card_entry-sign-up {
+    position: relative;
+    top: 1px;
     color: #A7A7A7;
     margin-right: 33px;
-    margin-top: 13px;
     cursor: pointer;
 }
 
 .spotify__nav-card_entry-login {
-    border-radius: 30px;
     background-color: #ffffff;
+    border-radius: 30px;
     color: #000000;
     margin-right: 25px;
-    padding: 12px 32px;
     cursor: pointer;
+    padding: 11px 30px;
+}
+
+/* make the stupid text ****ing centered */
+
+.spotify__nav-card_entry-login a {
+    position: relative;
+    top: 1px;
+}
+
+.spotify__nav-card_entry-sign-up:hover {
+    color: #ffffff;
+    scale: 1.07;
+}
+
+.spotify__nav-card_entry-login:hover {
+    background-color: #F6F6F6;
+    scale: 1.05;
 }

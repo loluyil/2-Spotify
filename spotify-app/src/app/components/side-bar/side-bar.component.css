@@ -27,7 +27,7 @@
     margin-bottom: 10px;
     background-color: #121212;
     width: calc(100% - 16px); /* Made side-bar 1 and 2 responsive with width change of container */
-    height: 153px;
+    height: 142px;
     border-radius: 10px;
     flex-shrink: 0;
     /* flex-shrink prevents shrinking, the containers arent "flexible" and their heights arent affected */
@@ -43,6 +43,7 @@
 .spotify__home-container_side-bar-items {
     width: 100%;
     margin-left: 6px;
+    overflow: visible;
 }
 
 .spotify__home-container_side-bar-items-container-icon {
@@ -64,11 +65,9 @@
 }
 
 .spotify__home-container_side-bar-items-container p {
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 1px;
 }
-
-/* micro-adjustments */
 
 .spotify__home-container_side-bar-items-container {
     margin-left: 15px;
@@ -78,6 +77,13 @@
     /* flex-direction row in order to align the text to the right of the icon */
     align-items: center;
     cursor: pointer;
+    overflow: visible;
+}
+
+.spotify__home-container_side-bar-items-container2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -7px;
 }
 
 /*
@@ -120,7 +126,7 @@
     margin-top: -2px;
     background-color: #121212;
     width: calc(100% - 16px);
-    height: 752px;
+    height: calc(100% - 158px);
     border-radius: 10px;
     flex-shrink: 0;
 }
@@ -181,7 +187,7 @@
 
 .spotify__home-container_side-bar_library-create-container-items button {
     background-color: #ffffff;
-    font-size: 14px;
+    font-size: 13px;
     border-radius: 20px;
     padding: 5px 15px;
     border: none;
@@ -265,7 +271,7 @@
 
 .spotify__home-container_side-bar_library-create-container-items button:hover {
     background-color: #F6F6F6;
-    transform: scale(1.04);
+    scale: 1.04;
 }
 
 .spotify__home-container_side-bar-items_library-container button:hover,
